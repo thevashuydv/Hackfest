@@ -63,3 +63,8 @@ print("\nClassification Report:\n", classification_report(y_test, y_pred, target
 # Confusion Matrix to see how well it classified OTT vs Non-OTT transactions
 print("\nConfusion Matrix:\n", confusion_matrix(y_test, y_pred))
 
+
+dataset.to_json('exported_user_transactions.json', orient='records')
+
+print("Dataset exported as 'exported_user_transactions.json'")
+
